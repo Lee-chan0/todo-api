@@ -1,0 +1,33 @@
+GET http://localhost:3000/tasks
+
+###
+
+GET http://localhost:3000/tasks?sort=oldest&count=3
+
+###
+
+GET http://localhost:3000/tasks/67237c8873b5d4176c826032
+
+###
+
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "title" : "뭉뭉이와 산책",
+  "description" : "뭉뭉이랑 30분 산책하기"
+}
+
+###
+
+PATCH http://localhost:3000/tasks/672397fcceebdd721320b052
+Content-Type: application/json
+
+{
+  "title" : "퐁실이와 놀기",
+  "description" : "퐁실이랑 30분 놀기"
+}
+
+###
+
+DELETE http://localhost:3000/tasks/672397fcceebdd721320b052
